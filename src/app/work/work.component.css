@@ -1,0 +1,68 @@
+.container {
+  margin-top: 5em;
+}
+
+.test {
+  width: 100%;
+  height: 500px;
+  shape-outside: polygon(
+    0 0, 
+    0 100%, 
+    100% 0, 
+    100% 0
+  );
+  clip-path: polygon(
+    0 0, 
+    0 100%, 
+    100% 50%, 
+    100% 0
+  );
+  background-color: lime;
+  position: relative;
+  z-index: 1;
+  transition: 
+  shape-outside 1.2s,
+  z-index 2s 1.5s,
+  clip-path 1.2;
+}
+
+.test:hover {
+  shape-outside: polygon(
+    0 0, 
+    50% 100%, 
+    100% 100%, 
+    100% 0
+  );
+  clip-path: polygon(
+    0 0, 
+    0 100%, 
+    100% 100%, 
+    100% 0
+  );
+  position: relative;
+  z-index: 100;
+  transition: 1.5s;
+}
+
+.test img {
+  float: left;
+}
+
+.test2 {
+  z-index: 2;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  top: -250px;
+  background-color: rgb(140, 85, 33);
+  shape-outside: polygon(0 30%, 0 70%, 100% 100%, 100% 0);
+  clip-path: polygon(0 50%, 0 70%, 100% 85%, 100% 0);
+  transition: 1.5s;
+}
+
+.test2:hover {
+  shape-outside: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  transition: 1.5s;
+  z-index: 100;
+}

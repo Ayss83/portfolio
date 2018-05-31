@@ -1,0 +1,30 @@
+.portrait {
+  max-width: 130px;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: block;
+  margin: 0 auto;
+}
+
+.perso {
+  text-align: center;
+  margin-top: 5em;
+}
+
+.container div {
+  float: left;
+  width: 45%;
+  text-align: justify;
+  box-sizing: border-box;
+  margin: 1em;
+}
+
+li {
+  list-style: none;
+  vertical-align: middle;
+  line-height: 1.5em;
+}
+
+i {
+  min-width: 40px;
+}
